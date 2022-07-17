@@ -19,9 +19,25 @@
 body {
   color: var(--primary-background-color);
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
 /* Header спільний для обох сторінок */
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -31,16 +47,26 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .logo-accent {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
+.nav-container {
+  display: flex;
+  margin: 0 331px 0 0;
+  padding: 0;
 }
-.link-name {
+
+.link-list {
+  list-style: none;
+
+  display: flex;
+  padding: 0;
+}
+.link-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -49,16 +75,27 @@ body {
   text-decoration: none;
 }
 
-.link-name:hover,
-.link-name:focus {
+.link-name:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link-item:hover,
+.link-item:focus {
   color: var(--active-link-color);
 }
 
-.link-name.current {
+.link-item.current {
   color: var(--active-link-color);
 }
+.contact-list {
+  list-style: none;
 
-.contact {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -66,9 +103,13 @@ body {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
-.contact:hover,
-.contact:focus {
+.contact-item:hover,
+.contact-item:focus {
   color: var(--active-link-color);
+}
+
+.contact-name:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* Сторінка "Студія" */
