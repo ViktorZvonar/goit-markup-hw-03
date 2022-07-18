@@ -36,7 +36,7 @@ p {
   align-items: center;
   width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px 0;
 }
 
 .logo {
@@ -47,7 +47,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
   text-decoration: none;
-  margin-right: 93px;
+  margin: 0 93px 0 0;
 }
 
 .logo-accent {
@@ -64,9 +64,12 @@ p {
   list-style: none;
 
   display: flex;
+  margin: 0;
   padding: 0;
 }
 .link-item {
+  display: flex;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -96,6 +99,8 @@ p {
 }
 
 .contact-item {
+  display: flex;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -118,7 +123,16 @@ p {
 .footer {
   background-color: var(--secondary-background-color);
 }
+
+.hero {
+  width: 1600px;
+  padding: 200px 0 200px 0;
+  margin: 0 auto 0;
+}
+
 .hero-title {
+  margin: 0 auto 30px auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -128,6 +142,10 @@ p {
   color: var(--tertiary-text-color);
 }
 .hero-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
