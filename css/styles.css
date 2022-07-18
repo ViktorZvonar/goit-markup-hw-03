@@ -199,6 +199,15 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.activities-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto 94px auto;
+  padding: 0 15px 0;
+}
+
 .activities-title {
   font-weight: 700;
   font-size: 36px;
@@ -206,7 +215,23 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+
+  margin: 0 auto 50px auto;
 }
+
+.activities-list {
+  list-style: none;
+
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+.activities-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .teem {
   background-color: var(--tertiary-background-color);
 }
