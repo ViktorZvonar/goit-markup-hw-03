@@ -21,30 +21,48 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
 }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%; 
+  height: auto;
+}
+
+/* Загальний контейнер */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  padding: 0 15px 0 15px;
+
+  outline: 1px solid red;
+}
+
 /* Header спільний для обох сторінок */
-.header-container {
+
+.flex-for-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px 0;
 }
 
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: calc(35.96px/26px)
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
   text-decoration: none;
@@ -56,25 +74,21 @@ p {
   color: var(--accent-color);
 }
 
-.nav-container {
-  display: flex;
-  margin: 0 331px 0 0;
+.nav {
+  margin: 0 344px 0 0;
   padding: 0;
 }
 
 .link-list {
-  list-style: none;
-
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 .link-item {
-  display: flex;
-
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: calc(16px/14px);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -93,19 +107,16 @@ p {
   color: var(--active-link-color);
 }
 .contact-list {
-  list-style: none;
-
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .contact-item {
-  display: flex;
-
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: calc(16px/14px);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -121,15 +132,16 @@ p {
 
 /* Сторінка "Студія" */
 
-.hero-container,
-.footer-container {
+.hero,
+.footer {
   background-color: var(--secondary-background-color);
 }
 
-.hero-container {
-  width: 1600px;
+.hero {
+  width: 100%;
+  max-width: 1200px;
   padding: 200px 0 200px 0;
-  margin: 0 auto 0;
+  margin: 0 auto 0 auto;
 }
 
 .hero-title {
@@ -137,7 +149,7 @@ p {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: calc(60px/44px);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -145,13 +157,14 @@ p {
 }
 .hero-button {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  
+  margin: 0 auto 0 auto;
+  padding: 10px 32px;
 
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: calc(30px/16px);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -165,19 +178,13 @@ p {
 .hero-button:focus {
   background-color: var(--active-link-hero-color);
 }
-.benefit-container {
-  display: flex;
-  align-items: center;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px 0;
+.benefits {
+  padding-top: 94px;
+  margin: 0 auto 0 auto;
 }
 
 .benefit-list {
-  list-style: none;
-
   display: flex;
-  margin: 94px auto;
   padding: 0;
 }
 
@@ -188,7 +195,7 @@ p {
 .benefit-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: calc(16.41px/14px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
@@ -197,35 +204,28 @@ p {
   margin: 10px 0;
   width: 270px;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: calc(24px/14px);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.activities-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 1200px;
-  margin: 0 auto 94px auto;
-  padding: 0 15px 0;
+.activities {
+  padding: 94px 0 94px 0;
+  margin: 0 auto 0 auto;
 }
 
 .activities-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: calc(42.19px/36px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 
-  margin: 0 auto 50px auto;
+  margin-top: 0 auto 50px auto;
 }
 
 .activities-list {
-  list-style: none;
-
   display: flex;
-  margin: 0 auto;
   padding: 0;
 }
 
@@ -233,30 +233,26 @@ p {
   margin-right: 30px;
 }
 
-.teem-container {
-  flex-basis: calc(100% / 4 - 30px);
-  align-items: center;
-  width: 1600px;
-  margin: 0 auto;
-  padding: 94px 15px;
+.teem {
+  padding: 94px 0 94px 0;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  max-width: 1200px;
 
   background-color: var(--tertiary-background-color);
 }
-
 .teem-title {
-  margin: 0 auto 50px auto;
+  margin: 0 auto 50px;
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: calc(42.19px/36px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 .teem-list {
-  list-style: none;
-
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -276,23 +272,42 @@ p {
 }
 
 .teem-member {
-  margin: 30px 0 10px 0;
+  margin: 30px 0 0 0;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: calc(18.75px/16px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .teem-member-text {
+  margin: 10px 0 0 0;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: calc(18.75px/16px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 /* Строрінка Портфоліо */
+
+.filter-list {
+  display: flex;
+  justify-content:center;
+  margin: 94px 0 50px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-button {
+  margin: 0 auto 0 auto;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;  
+}
 
 .filter-button {
   font-family: inherit;
@@ -312,10 +327,27 @@ p {
   background-color: var(--active-link-color);
 }
 
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 94px 0;
+}
+
 .example-demo {
   background: var(--primary-background-color);
   border: 1px solid #eeeeee;
-}
+  }
+
+.example-demo:not(:nth-child(3n)) {
+  margin-right: 30px;
+  }
+
+.example-demo:nth-child(-n+3) {
+  margin-bottom: 0px;
+  }
+
 .example-demo-link {
   text-decoration: none;
 }
@@ -323,24 +355,34 @@ p {
 .example-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36px/18px);
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 0;
 }
 
 .example-text {
   font-size: 16px;
-  line-height: 1.88;
+  line-height: calc(30px/16px);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 /* Footer спільний для обох сторінок */
 
-.footer-container {
-  width: 1600px;
-  margin: 0 auto;
-  padding: 60px 215px;
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  padding: 60px 0;
+  
 }
 
 .footer-logo-accent {
