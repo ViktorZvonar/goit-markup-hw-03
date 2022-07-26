@@ -21,9 +21,6 @@
 body {
   color: var(--primary-background-color);
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 h1, h2, h3, h4, p {
@@ -34,6 +31,7 @@ h1, h2, h3, h4, p {
 ul, li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -81,7 +79,7 @@ img {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(35.96px/26px)
+  line-height: calc(35.96/26)
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
   text-decoration: none;
@@ -107,7 +105,7 @@ img {
 .link-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16px/14px);
+  line-height: calc(16/14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -139,7 +137,7 @@ img {
 .contact-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16px/14px);
+  line-height: calc(16/14);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -169,7 +167,7 @@ img {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: calc(60px/44px);
+  line-height: calc(60/44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -184,7 +182,7 @@ img {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30px/16px);
+  line-height: calc(30/16);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -219,7 +217,7 @@ img {
 .benefit-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: calc(16.41px/14px);
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
@@ -227,7 +225,7 @@ img {
 }
 .benefit-text {
   font-size: 14px;
-  line-height: calc(24px/14px);
+  line-height: calc(24/14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -238,7 +236,7 @@ img {
 .activities-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(42.19px/36px);
+  line-height: calc(42.19/36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -266,7 +264,7 @@ img {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(42.19px/36px);
+  line-height: calc(42.19/36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -293,7 +291,7 @@ img {
 .teem-member {
  font-weight: 500;
   font-size: 16px;
-  line-height: calc(18.75px/16px);
+  line-height: calc(18.75/16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -301,7 +299,7 @@ img {
 .teem-member-text {
   margin-top: 10px;
   font-size: 16px;
-  line-height: calc(18.75px/16px);
+  line-height: calc(18.75/16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -340,7 +338,7 @@ img {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: calc(26/16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -385,7 +383,7 @@ img {
 .example-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(36px/18px);
+  line-height: calc(36/18);
   letter-spacing: 0.06em;
   height: 36px;
   color: var(--primary-text-color);
@@ -393,7 +391,7 @@ img {
 
 .example-text {
   font-size: 16px;
-  line-height: calc(30px/16px);
+  line-height: calc(30/16);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 4px;
@@ -434,7 +432,7 @@ img {
 .footer-address-text {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: calc(24/14);
   letter-spacing: 0.03em;
   color: var(--footer-address-text-color);
   text-decoration: none;
