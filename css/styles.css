@@ -12,7 +12,7 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --tertiary-background-color: #f5f4fa;
-  --primary-border-features: 1px solid #ECECEC;
+  --primary-border-features: 1px solid #ececec;
   --secondary-border-features: 1px solid #eeeeee;
 }
 
@@ -23,12 +23,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -36,10 +41,9 @@ ul, li {
 
 img {
   display: block;
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -66,8 +70,7 @@ img {
 /* Header спільний для обох сторінок */
 
 .header {
-  border-bottom: var( --primary-border-features);
-  
+  border-bottom: var(--primary-border-features);
 }
 
 .flex-for-header {
@@ -79,7 +82,7 @@ img {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(35.96/26)
+  line-height: calc(35.96 / 26);
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
   text-decoration: none;
@@ -105,7 +108,7 @@ img {
 .link-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -137,7 +140,7 @@ img {
 .contact-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -167,7 +170,7 @@ img {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: calc(60/44);
+  line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -175,14 +178,14 @@ img {
 }
 .hero-button {
   display: flex;
-  
+
   margin: 0 auto;
   padding: 10px 32px;
 
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30/16);
+  line-height: calc(30 / 16);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -225,7 +228,7 @@ img {
 }
 .benefit-text {
   font-size: 14px;
-  line-height: calc(24/14);
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -236,7 +239,7 @@ img {
 .activities-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(42.19/36);
+  line-height: calc(42.19 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -256,7 +259,7 @@ img {
 
 .teem {
   padding: 94px 0;
-  
+
   background-color: var(--tertiary-background-color);
 }
 .teem-title {
@@ -264,7 +267,7 @@ img {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(42.19/36);
+  line-height: calc(42.19 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -282,16 +285,16 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  }
+}
 
 .teem-card:not(:last-child) {
   margin-right: 30px;
 }
 
 .teem-member {
- font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
-  line-height: calc(18.75/16);
+  line-height: calc(18.75 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -299,7 +302,7 @@ img {
 .teem-member-text {
   margin-top: 10px;
   font-size: 16px;
-  line-height: calc(18.75/16);
+  line-height: calc(18.75 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -307,7 +310,6 @@ img {
 
 .teem-div {
   padding: 30px 0;
-
 }
 
 /* Строрінка Портфоліо */
@@ -318,7 +320,7 @@ img {
 
 .filter-list {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin-bottom: 50px;
   padding: 0;
   list-style: none;
@@ -331,14 +333,14 @@ img {
 }
 
 .filter-item:not(:last-child) {
-  margin-right: 8px;  
+  margin-right: 8px;
 }
 
 .filter-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(26/16);
+  line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -367,12 +369,11 @@ img {
 
 .example-demo {
   background: var(--primary-background-color);
-  
-  flex-basis: calc((100% - 2*30px) / 3)
+
+  flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-
-.example-demo:nth-child(-n+3) {
+.example-demo:nth-child(-n + 3) {
   margin-bottom: 0px;
 }
 
@@ -383,7 +384,7 @@ img {
 .example-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(36/18);
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   height: 36px;
   color: var(--primary-text-color);
@@ -391,11 +392,11 @@ img {
 
 .example-text {
   font-size: 16px;
-  line-height: calc(30/16);
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 4px;
- }
+}
 
 /* Footer спільний для обох сторінок */
 
@@ -432,7 +433,7 @@ img {
 .footer-address-text {
   font-style: normal;
   font-size: 14px;
-  line-height: calc(24/14);
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--footer-address-text-color);
   text-decoration: none;
